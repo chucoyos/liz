@@ -10,6 +10,8 @@ export default function Home() {
 			</div>
 			<div class='flex flex-col items-center'>
 				<Paint />
+				<Paint />
+				<Paint />
 			</div>
 		</main>
 	)
