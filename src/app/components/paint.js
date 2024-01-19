@@ -7,6 +7,7 @@ const Paint = () => {
 				alt='Belleza Efimera'
 				width={250}
 				height={250}
+				class='transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 drop-shadow-2xl'
 			/>
 			<div class='pt-4'>
 				<p>Lizette Glez.</p>
