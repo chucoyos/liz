@@ -1,15 +1,16 @@
 import Link from 'next/link'
 const Nav = () => {
 	return (
-		<nav class='flex justify-end'>
-			<button className='p-2'>
+		<nav class='flex justify-between items-center p-2 bg-slate-300'>
+			<p class='font-bold text-lg italic'>Art Mageour</p>
+			<button className=''>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					fill='none'
 					viewBox='0 0 24 24'
 					strokeWidth={1.5}
 					stroke='currentColor'
-					className='w-6 h-6'
+					className='w-8 h-8'
 				>
 					<path
 						strokeLinecap='round'
