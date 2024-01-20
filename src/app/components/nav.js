@@ -3,7 +3,7 @@ const Nav = ({ toggleDrawer }) => {
 	return (
 		<nav className='fixed top-0 left-0 w-full drop-shadow-lg z-30'>
 			<div className='flex justify-between items-center p-2 bg-slate-300'>
-				<p className='font-bold text-lg italic'>Art Mageour</p>
+				<p className='font-bold text-lg italic'>Liz Glez</p>
 				<button
 					className=''
 					onClick={toggleDrawer}
