@@ -5,8 +5,8 @@ const Paint = ({ image }) => {
 			<Image
 				src={`/${image}.jpeg`}
 				alt='Belleza Efimera'
-				width={250}
-				height={250}
+				width={300}
+				height={300}
 				className='transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 drop-shadow-2xl'
 			/>
 			<div className='pt-4'>
