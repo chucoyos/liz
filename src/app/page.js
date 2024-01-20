@@ -5,6 +5,25 @@ import Drawer from './components/drawer'
 import { useState } from 'react'
 
 export default function Home() {
+	const images = [
+		'17',
+		'16',
+		'15',
+		'14',
+		'13',
+		'12',
+		'11',
+		'10',
+		'9',
+		'8',
+		'7',
+		'6',
+		'5',
+		'4',
+		'3',
+		'2',
+		'1',
+	]
 	const [drawer, setDrawer] = useState('w-0')
 	const toggleDrawer = () => {
 		if (drawer === 'w-full') {
@@ -23,23 +42,12 @@ export default function Home() {
 				</h1>
 			</div>
 			<div className='flex flex-col items-center'>
-				<Paint image='17' />
-				<Paint image='16' />
-				<Paint image='15' />
-				<Paint image='14' />
-				<Paint image='13' />
-				<Paint image='12' />
-				<Paint image='11' />
-				<Paint image='10' />
-				<Paint image='9' />
-				<Paint image='8' />
-				<Paint image='7' />
-				<Paint image='6' />
-				<Paint image='5' />
-				<Paint image='4' />
-				<Paint image='3' />
-				<Paint image='2' />
-				<Paint image='1' />
+				{images.map((image, index) => (
+					<Paint
+						image={image}
+						key={index}
+					/>
+				))}
 			</div>
 		</main>
 	)
