@@ -1,10 +1,13 @@
 import Link from 'next/link'
-const Nav = () => {
+const Nav = ({ toggleDrawer }) => {
 	return (
-		<nav class='fixed top-0 w-full drop-shadow-lg z-10'>
-			<div class='flex justify-between items-center p-2 bg-slate-300'>
-				<p class='font-bold text-lg italic'>Art Mageour</p>
-				<button className=''>
+		<nav className='fixed top-0 left-0 w-full drop-shadow-lg z-30'>
+			<div className='flex justify-between items-center p-2 bg-slate-300'>
+				<p className='font-bold text-lg italic'>Art Mageour</p>
+				<button
+					className=''
+					onClick={toggleDrawer}
+				>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						fill='none'
