@@ -1,9 +1,9 @@
 import Image from 'next/image'
-const Paint = () => {
+const Paint = ({ image }) => {
 	return (
 		<div className='mt-10'>
 			<Image
-				src='/belleza-efimera.jpg'
+				src={`/${image}.jpeg`}
 				alt='Belleza Efimera'
 				width={250}
 				height={250}
