@@ -1,14 +1,17 @@
 'use client'
-const Drawer = ({ drawer }) => {
+const Drawer = ({ drawer, hidden }) => {
 	return (
 		<div
-			className={`fixed top-0 left-0 bg-slate-950 text-slate-200 h-screen z-20 ${drawer} transition-all duration-300 ease-in-out bg-slate-300 opacity-90`}
+			id='drawer-nav'
+			className={`fixed top-0 left-0 overflow-hidden bg-slate-950 text-slate-200 h-screen ${drawer} z-20 transition-all duration-500 ease-in-out bg-slate-300 opacity-90`}
 		>
-			<div className='flex justify-between items-center p-2 overflow-hidden'>
-				<ul className={`flex flex-col p-32 mt-32`}>
-					<li>Drawer text</li>
-					<li>Drawer text</li>
-					<li>Drawer text</li>
+			<div className='relative top-0'>
+				<ul
+					className={`${hidden} h-screen flex flex-col justify-center gap-2 items-center`}
+				>
+					<li className='text-xl'>Drawer text</li>
+					<li className='text-xl'>Drawer text</li>
+					<li className='text-xl'>Drawer text</li>
 				</ul>
 			</div>
 		</div>

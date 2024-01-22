@@ -5,6 +5,17 @@ import Drawer from './components/drawer'
 import { useState } from 'react'
 
 export default function Home() {
+	const [drawer, setDrawer] = useState('w-0')
+	const [hidden, setHidden] = useState('hidden')
+	const toggleDrawer = () => {
+		if (drawer == 'w-0') {
+			setHidden('block')
+			setDrawer('w-full')
+		} else {
+			setHidden('hidden')
+			setDrawer('w-0')
+		}
+	}
 	const images = [
 		'17',
 		'16',
@@ -24,18 +35,14 @@ export default function Home() {
 		'2',
 		'1',
 	]
-	const [drawer, setDrawer] = useState('w-0')
-	const toggleDrawer = () => {
-		if (drawer === 'w-full') {
-			setDrawer('w-0')
-		} else {
-			setDrawer('w-full')
-		}
-	}
+
 	return (
 		<main className='flex min-h-screen flex-col'>
 			<Nav toggleDrawer={toggleDrawer} />
-			<Drawer drawer={drawer} />
+			<Drawer
+				drawer={drawer}
+				hidden={hidden}
+			/>
 			<div className='grid text-center lg:w-full pt-4 mt-16'>
 				<h1 className='text-xl font-medium text-center'>
 					OBRAS DE ARTE ORIGINALES
